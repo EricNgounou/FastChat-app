@@ -1,0 +1,259 @@
+<!DOCTYPE hmtl>
+
+<html>
+  <head>
+    <title>FAST CHAT</title>
+ 
+    <link rel="stylesheet" href="sources/styles/main.css" />
+    <link rel="stylesheet" href="sources/styles/chats-preview.css" />
+    <link rel="stylesheet" href="sources/styles/chat-view.css" />
+
+    <script defer type="module" src="sources/scripts/index.js"></script>
+  </head>
+  <body>
+    <section class="box">
+      <section class="login-box">
+        <div class="app-name">
+          <span class="highlight1">
+            Fast
+          </span>
+          <span class="highlight2">
+            Chat
+          </span>     
+        </div>
+
+        <form class="login-space">
+          <p class="login-message">Log into your account </p>
+      <input class="user-name" type="text" placeholder="Enter your sudo name" maxlength="8">
+      <input class="user-password" type="text" placeholder="Password"
+      maxlength="5">
+      <button class="btn-login">Login</button>    
+        </form >
+      </section>
+
+    <section class="app-box">
+      <div class="header">
+        <div class="app-name">
+           <span class="highlight1">
+            Fast
+          </span>
+          <span class="highlight2">
+            Chat
+          </span>        
+         </div>
+
+        <div class="user-index">
+          <span class="index">You</span>
+          <div class="user-picture">
+            <img class="user-profile" src="sources/channel-pictures/my-channel.jpeg" />
+            <span class="online-status"></span>
+          </div>
+          <span id="acc-label">Account & Settings</span>          
+          <div id="acc-panel">
+            <h4>Account & Settings</h4>
+            <ul>
+            <li class="account">Manage account</li>
+            <li class="settings">Settings</li>
+            <li class="logout">Logout</li>
+          </ul> 
+        </div>          
+        </div>
+
+        <button class="notification-btn">
+          <img class="notification-icon" src="sources/icons/notification-icon.png">
+          <span class="hidden notification-status">1</span>
+          <p id="notification-label">Notifications</p>
+          <div id="notifications-panel">
+            <h4>Notifications</h4>
+            <div>
+               <ul>          
+           <li>
+          <span id="message-icon" >
+            <img src="sources/icons/message-icon.png" alt="message icon">
+          </span>
+            <p>You have 2 unread messages</p> 
+          </li>
+          </ul>
+            </div>          
+        </div>          
+        </button>
+      </div>
+
+      <div class="slider">
+        <div class="slide chats-preview">
+          <div class="bar">
+          <div class="chats-bar-info">
+          <p class="left">Chats</p>
+          <button class="friend-btn">
+          <img class="friend-icon"src="sources/icons/friend-icon.png">
+          <p id="friend-label">Friends</p>
+          <div id="friends-panel">
+            <h4>Friends</h4>            
+              <span class="add-btn">Add a friend</span>     
+              <div>
+                  <p>No friends found</p>
+              </div>      
+          </div>
+          </button>
+            </div>            
+            <input
+              class="search-chat-bar"
+              type="text"
+              placeholder="Search or sart a new chat"
+            />          
+          </div>
+
+          <div class="chats-box-preview">
+
+            <div class="chat-preview">
+              <div class="sender-picture">
+                <img
+                  class="sender-profile"
+                  src="sources/channel-pictures/channel-1.jpeg"
+                />
+                <span class="hidden newmessage-status">1</span>
+              </div>
+
+              <div class="chat-body-preview">
+                <div class="chat-info">
+                  <div class="chat-ref">
+                    <p class="sender-name">Chewy Promotions</p>
+                  </div>
+                  <span class="time-preview">4:58 PM</span>
+                </div>
+                <p class="message-preview">
+                  Hey there We're writing to tell you about our...
+                </p>
+              </div> 
+              
+              <div class="chat-preview-options">
+                <div class="icon">
+                <img class="markasread-icon" src="sources/icons/markasread-icon.png">
+                <p class="markasread">Mark as read</p>
+                </div>          
+                <div class="icon">
+                <img class="delete-icon" src="icons/delete-icon.png">
+                <p class="delete">Delete</p>
+                </div>
+            </div>
+            </div> 
+
+          </div>
+
+        </div>
+
+        <div class="slide chat-view ">          
+            <div class="head">
+              <div class="sender-index">
+                <div class="picture">
+                  <img class="profile" src="sources/channel-pictures/channel-5.jpeg" />
+                  <div class="hidden online-status"></div>
+                </div>
+                <span class="name">Brandon</span>
+              </div>
+              <div class="chat-stat">You have 2 new message</div>
+            </div>
+
+            <div class="message-container">
+              
+              <div class="main-message">
+                <div class="message-body">
+                  <p>Chat easily and faster</p>
+                </div>
+              </div>
+ 
+              <div class="message sender-message">
+                <div class="message-body">
+                  <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="time receiving-time">4:58</p>
+                  <div class="picture">
+                    <img
+                      class="profile"
+                      src="sources/channel-pictures/channel-5.jpeg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="message user-message">
+                <div class="message-body">
+                  <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo unde ipsum, a amet asperiores nesciunt maxime
+                    temporibus quos, optio iste officia inventore quaerat
+                    mollitia eum tenetur dolorem commodi nobis necessitatibus.
+                  </p>
+                  <p class="time sending-time">12:08</p>
+                  <div class="picture">
+                    <img
+                      class="profile"
+                      src="sources/channel-pictures/my-channel.jpeg"
+                    />
+                  </div>
+                </div>
+              </div>      
+              <div class="message sender-message">
+                <div class="message-body">
+                  <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="time receiving-time">4:58</p>
+                  <div class="picture">
+                    <img
+                      class="profile"
+                      src="sources/channel-pictures/channel-5.jpeg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="message user-message">
+                <div class="message-body">
+                  <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo unde ipsum, a amet asperiores nesciunt maxime
+                    temporibus quos, optio iste officia inventore quaerat
+                    mollitia eum tenetur dolorem commodi nobis necessitatibus.
+                  </p>
+                  <p class="time sending-time">12:08</p>
+                  <div class="picture">
+                    <img
+                      class="profile"
+                      src="sources/channel-pictures/my-channel.jpeg"
+                    />
+                  </div>
+                </div>
+              </div>              
+
+
+              <div class="temporary-message">
+                <div class="message-body">
+                  <p>
+                Start to Chat                     
+                  </p>               
+              </div>                
+              </div>
+
+              <form class="input-area">
+                <input
+                  class="message-input"
+                  type="text"
+                  placeholder="New message"
+                />
+                <button class="send-btn">
+                  <img class="send-icon" src="sources/icons/send icon.png" />
+                </button>
+              </form>    
+
+            </div>
+
+          <div class="chat-view-main">
+            <p>Select a chat to view content!</p>
+          </div>      
+
+        </div>
+        <button class="left-btn">&larr;</button>
+        <button class="right-btn">&rarr;</button>
+      
+      </section>
+    </section>   
+  </body>
+</html>
